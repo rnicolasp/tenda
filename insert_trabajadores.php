@@ -11,7 +11,7 @@
         <input type="tel" maxlenght="14" name="Telefono" placeholder="Teléfono trabajador"/>
         <label> Email </label>
         <input type="text" maxlenght="100" name="Email" placeholder="Email del trabajador"/>
-        <label> Horari </label>
+        <label> Horario </label>
         <input type="text" maxlenght="100" name="Horari" placeholder="Horario del trabajador"/>
         <button type="submit"> Enviar</button>
     </form>
