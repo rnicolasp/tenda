@@ -25,6 +25,6 @@ echo $query;
 
 $res = mysqli_query($bbdd, $query);
 IF(!$res){
-    echo "No ha..."
-    print (mysqli_error($bbdd));
+    echo "No ha...";
+    print (mysqli_error($bbdd)); 
 }
