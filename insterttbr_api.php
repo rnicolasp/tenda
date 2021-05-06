@@ -11,16 +11,14 @@ echo "<p>" . $_POST['Nombre'] . "</p>";
 echo "<p>" . $_POST['Apellidos'] . "</p>";
 echo "<p>" . $_POST['Telefono'] . "</p>";
 echo "<p>" . $_POST['Email'] . "</p>";
-echo "<p>" . $_POST['Horari'] . "</p>";
 
 $Dni = $_POST['Dni'];
 $Nombre = $_POST['Nombre'];
 $Apellidos = $_POST['Apellidos'];
 $Telefono = $_POST['Telefono'];
 $Email = $_POST['Email'];
-$Horari = $_POST['Horari'];
 
-$query="INSERT INTO Treballador(Dni,Nombre,Apellidos,Telefono,Email,Horari) VALUES (\"$Dni\",\"$Nombre\",\"$Apellidos\",\"$Telefono\",\"$Email\",\"$Horari\");";
+$query="INSERT INTO Client(Dni,Nombre,Apellidos,Telefono,Email) VALUES (\"$Dni\",\"$Nombre\",\"$Apellidos\",\"$Telefono\",\"$Email\");";
 echo $query;
 
 $res = mysqli_query($bbdd, $query);

@@ -4,40 +4,40 @@
             <h1>
                 Panaderia de PeepoDJ
             </h1>
-
 <?php require 'includes/head.php';?>
 <body>
+
 <?php require 'includes/header.php';?>
 
     <table>
+    <thead>
         <tr>
-            <td>DNI</td>
-            <td>Nombre</td>
-            <td>Apellidos</td>
-            <td>Telefono</td>
-            <td>Email</td>
-            <td>Horari</td>
-         </tr>
-         <tr>   
-            <td>43209129L</td>
-            <td>Pablo</td>
-            <td>Picasso</td>
-            <td>6789834</td>
-            <td>pabloelmoro@gmail.com</td>
-            <td>10:15-12:30</td>
+            <th> DNI </th>
+            <th> Nombre </th>
+            <th> Apellidos </th>
+            <th> Telefono </th>
+            <th> Email </th>
         </tr>
-        <tr>   
-            <td>44291629L</td>
-            <td>Maria</td>
-            <td>Zambolla</td>
-            <td>6782969</td>
-            <td>Mariavenetortugas@gmail.com</td>
-            <td>10:15-12:30</td>
-        </tr>
-    </table>
+    </thead>
+    <tbody>
+        <?php
+            $query="SELECT * FROM Client ORDER BY Nombre";
+            $result = mysqli_query($bbdd,$query);
+            while ($row=mysqli_fetch_assoc($result)) {
+                echo "<tr>
+                        <td>$row[Dni]</td>
+                        <td>$row[Nombre]</td>
+                        <td>$row[Apellidos]</td>  
+                        <td>$row[Telefono]</td>
+                        <td>$row[Email]</td>                      
+                        </tr>";
+            }
+                    
+                    ?>
+    </tbody>
+</table>
+<img src="Images/pepoDJ.gif" width="200px" />
     </div>
+
 </body>
 
-<div style="width: 100%; text-align: bottom-right;">
-            <img src="Images/pepoDJ.gif" width="200px" />
-    </div>
