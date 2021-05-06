@@ -1,5 +1,5 @@
 <body>
-    <form action="insterttbr_api.php" method="post">
+    <form action="insertpan_api.php" method="post">
     <?php require 'includes/header.php';?>
     <label> Dni </label>
         <input type="text" maxlenght="16" name="Dni" placeholder="Dni del trabajador"/>

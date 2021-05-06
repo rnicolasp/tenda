@@ -5,7 +5,7 @@
     <body>
         <div style="width: 100%; text-align: center;">
             <h1>
-                Panaderia de PeepoDJ 2
+                Panaderia de PeepoDJ
             </h1>
             <?php require 'includes/header.php'; ?>
             <h2> Vendemos pan fresco</h2>
@@ -16,7 +16,7 @@
             <div style="width: 100%; text-align: topright;">
                 <img src="Images/PAN.jpeg" width="250px" />
                 <div>
-                    <p>Lo de arriba es un Pan bastante fresco</p>
+                    <p>Lo de arriba es un pan bastante fresco</p>
                 </div>
             </div>
         </div>
