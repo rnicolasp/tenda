@@ -1,8 +1,14 @@
 <DOCTYPE html>
 <html lang="es">
+    <div style="width: 100%; text-align: center;">
+            <h1>
+                Panaderia de PeepoDJ
+            </h1>
+
 <?php require 'includes/head.php';?>
 <body>
 <?php require 'includes/header.php';?>
+
     <table>
         <tr>
             <td>DNI</td>
@@ -29,5 +35,9 @@
             <td>10:15-12:30</td>
         </tr>
     </table>
+    </div>
 </body>
 
+<div style="width: 100%; text-align: bottom-right;">
+            <img src="Images/pepoDJ.gif" width="200px" />
+    </div>
