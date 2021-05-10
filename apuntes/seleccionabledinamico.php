@@ -2,7 +2,8 @@
 <?php
 $query="SELECT ID, Nom FROM PROVEIDOR ORDER BY Nom";
 $result= mysqli_query ($bbdd,$query);
-while($row= mysqli-fetch-assol($result))
+while($row= mysqli_fetch_assoc($result)){
+}
 echo "<option value= \"$row[ID]\"> $row [Nom]</option>";
 ?>
 
