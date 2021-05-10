@@ -35,8 +35,10 @@
                     
                     ?>
     </tbody>
-</table>
-<img src="Images/pepoDJ.gif" width="200px" />
+</table> 
+        </div>
+        <div style="width: 100%; text-align: center;">
+<img src="Images/PepeClown.gif" width="150px" />
     </div>
 
 </body>
