@@ -12,7 +12,7 @@
         </div>
         <div style="width: 100%; text-align: center;">
             <img src="Images/pepoDJ.gif" width="200px" />
-            <p> Todo el pan lo hace PeepoDJ </p>
+            <p> Todo el pan lo hace PeepoDJ. </p>
             <div style="width: 100%; text-align: topright;">
                 <img src="Images/PAN.jpeg" width="250px" />
                 <div>

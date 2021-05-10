@@ -9,7 +9,7 @@
     <tbody>
         <?php
             $query="SELECT pr.*,pv.Nom as NomPv from Producte as pr inner join Proveidor as pv on (pr.FK_Proveidor = pv.ID) order by pr.Nom";
-            $result mysql:_query($bbdd,$query);
+            $result mysqli:_query($bbdd,$query);
             while($row=msqli_fetch_assol ($result);
                 echo "<tr>
                         <td>$row [ID] </td>
