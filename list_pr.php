@@ -21,14 +21,18 @@
     </thead>
     <tbody>
         <?php
-            $query="SELECT * FROM Producte ORDER BY Nombre";
+            $query="SELECT pr.*, pv.Nombre_proveidor
+                FROM Producte AS pr
+                INNER JOIN Proveidor AS pv
+                ON (pv.Codi_proveidor = pr.idProveidor)
+                 ORDER BY pr.Nombre";
             $result = mysqli_query($bbdd,$query);
             while ($row=mysqli_fetch_assoc($result)) {
                 echo "<tr>
                         <td>$row[Codi]</td>
                         <td>$row[Precio]</td>
                         <td>$row[Nombre]</td>  
-                        <td>$row[idProveidor]</td>
+                        <td>$row[Nombre_proveidor]</td>
                         </tr>";
             }
                     

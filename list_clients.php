@@ -40,7 +40,7 @@
 </table> 
         </div>
         <div style="width: 100%; text-align: center;">
-<img src="Images/PepeClown.gif" width="150px" />
+<img src="Images/pepoLove.gif" width="150px" />
     </div>
 
 </body>
