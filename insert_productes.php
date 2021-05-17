@@ -6,11 +6,16 @@
             <h1>
                 Panaderia de PeepoDJ
             </h1>
-            <img src="Images/hck.gif" width="200px" />
+            <h2>
+                Insert Productos.
+            </h2>
+            <?php require 'includes/home.php'; ?>            
+            <?php require 'includes/header_insert.php'; ?>
+            <img src="Images/bongoTap.gif" width="150px" />
+
 </div>
 <div style="width: 100%; text-align: center;">
     <form action="insertpr_api.php" method="post">
-        <?php require 'includes/header.php'; ?>
         <label> Precio </label>
         <input type="number" max="99999" step="0.01" name="Precio" placeholder="Inserta el precio" />
         <label> Nombre </label>

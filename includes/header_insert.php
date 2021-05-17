@@ -1,4 +1,5 @@
 <header>
-<a href="list_clients.php">Clientes</a> | 
-<a href="list_pr.php">Productos</a> | 
+<a href="insert_productes.php">Productos</a> | 
+<a href="insert_pv.php">Proveidores</a> | 
+<a href="insert_cl.php">Clientes</a> | 
 </header>

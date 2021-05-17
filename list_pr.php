@@ -7,8 +7,8 @@
 <?php require 'includes/head.php';?>
 <body>
 
-<?php require 'includes/header.php';?>
-<?php require 'includes/header_insert.php';?>
+<?php require 'includes/home.php';?>
+<?php require 'includes/header_list.php';?>
 
     <table>
     <thead>

@@ -1,5 +1,5 @@
 <header>
-<a href="index.php">Inici</a> | 
+<a href="index.php">Inicio</a> | 
 <a href="index_list.php">Listas</a> | 
-<a href="insert_productes.php">Insert productes</a>
+<a href="index_insert.php">Inserts</a>
 </header>
