@@ -21,7 +21,6 @@
             $where="";
             if (isset($_GET["Filtro1"]) && $_GET["Filtro1"] > 0){
                 $where = "WHERE Codi_proveidor=\"$_GET[Filtro1]\"";
-                echo "saljfhasb";
             }
             ?>
 </select> 
