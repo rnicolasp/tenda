@@ -13,10 +13,7 @@
 <label>Filtrar per:</label>
 <select name="Filtro1">
 <option value=0>Tots els proveidors</option>
-<option value=1>Panaderoooooo</option>
-<option value=5>Es forn</option>
-<option value=3>Forn nou</option>
-<option value=6>Panfresco</option>
+
 <?php
             $where="";
             if (isset($_GET["Filtro1"]) && $_GET["Filtro1"] > 0){
