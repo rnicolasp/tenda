@@ -1,8 +1,6 @@
 <DOCTYPE html>
 <html lang="es">
-<?php require 'includes/head.php';?>
 <body>
-<?php require 'includes/header.php';?>
 
 <?php
 

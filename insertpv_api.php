@@ -1,8 +1,6 @@
 <DOCTYPE html>
 <html lang="es">
-<?php require 'includes/head.php';?>
 <body>
-<?php require 'includes/header.php';?>
 
 <?php
 
@@ -19,8 +17,12 @@ echo $query;
 
 $res = mysqli_query($bbdd, $query);
 if($res){
-}else{
-    echo mysqli_error($bbdd);
+    header("Location:correcto.php");
+}
+else{
+
+$error = mysqli_error($bbdd);
+    header("Location:incorrecto.php?error=$error");
 }
 ?>
 </html>
