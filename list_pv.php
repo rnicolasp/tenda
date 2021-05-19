@@ -13,6 +13,7 @@
 <label>Filtrar per:</label>
 <select name="Filtro1">
 <option value=0>Tots els proveidors</option>
+<<<<<<< HEAD
 <?php
 $query = "SELECT Codi_proveidor, Nombre_proveidor FROM Proveidor ORDER BY Nombre_proveidor";
             $result = mysqli_query($bbdd, $query);
@@ -20,6 +21,9 @@ $query = "SELECT Codi_proveidor, Nombre_proveidor FROM Proveidor ORDER BY Nombre
                 echo "<option value= \"$row[Codi_proveidor]\">$row[Nombre_proveidor]</option>";
             }
 ?>
+=======
+
+>>>>>>> master
 <?php
             $where="";
             if (isset($_GET["Filtro1"]) && $_GET["Filtro1"] > 0){
