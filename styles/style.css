@@ -3,13 +3,13 @@ table,td{
     border: 2px solid;
 }
 html{
-    background-color: #fffb66 ;
+    background-color: #ffbdaf ;
 }
 body{
     width: 800px;
     padding: 20px;
     margin-right: auto;
-    background-color: yellow;
+    background-color:#ffc6ba;
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
@@ -21,4 +21,16 @@ div{
 
 table{
     margin: 30px auto 30px auto;
+}
+
+.button {
+    background-color:floralwhite;
+    border:none;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 15px;
+    font-size: 16px;
 }
