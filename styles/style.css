@@ -3,20 +3,20 @@ table,td{
     border: 2px solid;
 }
 html{
-    background-color: #ffbdaf ;
+    background-color: #fc5959 ;
 }
 body{
     width: 800px;
     padding: 20px;
     margin-right: auto;
-    background-color:#ffc6ba;
+    background-color: rgb(255, 136, 136);
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 div{
-    margin: 15px 0px 15px 0px;
+    margin: 15px 10px 15px 0px;
 }
 
 table{

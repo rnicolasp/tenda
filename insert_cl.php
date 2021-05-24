@@ -11,19 +11,24 @@
             </h2>
             <?php require 'includes/home.php'; ?>
             <?php require 'includes/header_insert.php'; ?>  
-            <img src="Images/hck.gif" width="150px" />          
+            <div>
+            <img src="Images/hck.gif" width="150px" />    
+            </div>      
 </div>
 <div style="width: 100%; text-align: center;">
     <form action="insertcl_api.php" method="post">
-        <label> DNI </label>
+        <div>
+        <label> <b>DNI</b> </label>
         <input type="text" max="255"name="DNI" placeholder="DNI del cliente" />
-        <label> Nombre </label>
+        <label><b>Nombre</b></label>
         <input type="text" maxlenght="255" name="Nombre" placeholder="Nombre del cliente" />
-        <label> Apellidos </label>
+        </div><div>
+        <label><b>Apellidos</b></label>
         <input type="text" maxlenght="255" name="Apellidos" placeholder="Apellidos del cliente" />
-        <label> Telefono </label>
+        <label><b>Telefono</b></label>
         <input type="text" maxlenght="255" name="Telefono" placeholder="Telefono del cliente" />
-        <label> Email </label>
+        </div>
+        <label><b>Email</b></label>
         <input type="text" maxlenght="255" name="Email" placeholder="Email del cliente" />
         <button type="submit"> Enviar</button>
     </form>

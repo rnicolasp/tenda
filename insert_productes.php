@@ -16,21 +16,25 @@
 </div>
 <div style="width: 100%; text-align: center;">
     <form action="insertpr_api.php" method="post">
+       <div>
         <label> Precio </label>
-        <input type="number" max="99999" step="0.01" name="Precio" placeholder="Inserta el precio" />
+        <input type="number" max="999" step="0.01" name="Precio" placeholder="Inserta el precio" required />
+       </div><div>
         <label> Nombre </label>
-        <input type="text" maxlenght="255" name="Nombre" placeholder="Inserta el nombre" />
+        <input type="text" maxlength="35" name="Nombre" placeholder="Inserta el nombre" required/>
+        </div><div>
         <label> Proveidor </label>
         <select name="proveidor">
             <?php
-            $query = "SELECT Codi_proveidor, Nombre_proveidor FROM Proveidor ORDER BY Nombre_proveidor";
+            $query = "SELECT Codi_proveidor, Nombre_proveidor FROM Proveidor ORDER BY Codi_proveidor";
             $result = mysqli_query($bbdd, $query);
             while ($row = mysqli_fetch_assoc($result)) {
                 echo "<option value= \"$row[Codi_proveidor]\">$row[Nombre_proveidor]</option>";
             }
             ?>
         </select>
-        <button type="submit"> Enviar</button>
+        </div>        <button type="submit"> Enviar </button>
+        </div>
     </form>
 </body>
 

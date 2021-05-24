@@ -10,6 +10,17 @@
 <?php require 'includes/home.php';?>
 
 <?php require 'includes/header_list.php';?>
+<div>
+<label>Cerca per DNI</label>
+<input list="brow">
+<datalist id="brow">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist> 
+</div>
 
     <table>
     <thead>

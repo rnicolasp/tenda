@@ -16,7 +16,9 @@
             <img src="Images/ohno.gif" width="200px" />
             <div style="width: 100%; text-align: topright;">
         </div>
+
         <?php echo $_GET["error"]?>
+
     </body>
 
     </html>
