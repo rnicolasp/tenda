@@ -1,10 +1,11 @@
 <DOCTYPE html>
 <html lang="es">
+<?php require 'includes/head.php';?>
+
     <div style="width: 100%; text-align: center;">
             <h1>
                 Panaderia de PeepoDJ
             </h1>
-<?php require 'includes/head.php';?>
 <body>
 
 <?php require 'includes/home.php';?>

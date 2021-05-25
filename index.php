@@ -3,7 +3,7 @@
     <?php require 'includes/head.php'; ?>
 
     <body>
-        <div style="width: 100%; text-align: center;">
+            <div style="width: 100%; text-align: center;">
             <h1>
                 Panaderia de PeepoDJ
             </h1>

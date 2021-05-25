@@ -3,13 +3,13 @@ table,td{
     border: 2px solid;
 }
 html{
-    background-color: #fc5959 ;
+    font-family: 'sans-serif';
 }
 body{
     width: 800px;
     padding: 20px;
     margin-right: auto;
-    background-color: rgb(255, 136, 136);
+    /*background-color: rgb(255, 136, 136);*/
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
@@ -24,10 +24,28 @@ table{
 }
 
 .button {
-    background-color:floralwhite;
-    border:none;
+    background-color: floralwhite;
+    border: black;
+        border-top-color: black;
+        border-top-style: none;
+        border-top-width: 1;
+        border-right-color: black;
+        border-right-style: none;
+        border-right-width: 1;
+        border-bottom-color: black;
+        border-bottom-style: none;
+        border-bottom-width: 1;
+        border-left-color: black;
+        border-left-style: none;
+        border-left-width: 1;
+        border-image-outset: 0;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+
     color: black;
-    padding: 10px 25px;
+    padding: 10px 25px 10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
