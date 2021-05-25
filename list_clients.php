@@ -15,14 +15,24 @@
 <label>Cerca per DNI</label>
 <input list="brow">
 <datalist id="brow">
-  <option value="Internet Explorer">
-  <option value="Firefox">
-  <option value="Chrome">
-  <option value="Opera">
-  <option value="Safari">
+  <?php
+    $query = "SELECT DNI FROM Client AS cl ORDER BY DNI;";
+    $result = mysqli_query($bbdd, $query) or die (mysqli_error($bbdd));
+    while($row = mysqli_fetch_assoc($result)){
+        echo "<option value=\"$row[DNI]\">$row[DNI]</option>";
+    }
+  ?>
 </datalist> 
 </div>
 
+    <?php
+    $where="";
+    if (isset($_GET["Filtro2"]) && $_GET["Filtro2"] > 0){
+        $where = " WHERE DNI=\"$_GET[Filtro2]\" " or die (mysqli_error($bbdd));
+        echo "asldkmasd";
+    }
+    ?>
+<button type="submit">Filtrar</button>
     <table>
     <thead>
         <tr>
@@ -35,11 +45,13 @@
     </thead>
     <tbody>
         <?php
-            $query="SELECT * FROM Client ORDER BY Nombre";
+        
+            $query="SELECT * FROM Client $where ORDER BY Nombre";
             $result = mysqli_query($bbdd,$query);
             while ($row=mysqli_fetch_assoc($result)) {
                 echo "<tr>
                         <td>$row[Dni]</td>
+             
                         <td>$row[Nombre]</td>
                         <td>$row[Apellidos]</td>  
                         <td>$row[Telefono]</td>
