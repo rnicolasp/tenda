@@ -25,7 +25,7 @@
 </datalist> 
 </div>
 
-    <?php
+     <?php
     $where="";
     if (isset($_GET["Filtro2"]) && $_GET["Filtro2"] > 0){
         $where = " WHERE DNI=\"$_GET[Filtro2]\" " or die (mysqli_error($bbdd));

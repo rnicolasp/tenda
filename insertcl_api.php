@@ -16,13 +16,17 @@ $Apellidos = $_POST['Apellidos'];
 $Telefono = $_POST['Telefono'];
 $Email = $_POST['Email'];
 
-$query="INSERT INTO Client(DNI,Nombre,Apellidos,Telefono,Email) VALUES (\"$DNI\",\"$Nombre\",\"$Apellidos\",\"$Telefono\",\"$Email\");";
+$query="INSERT INTO Client (DNI, Nombre, Apellidos, Telefono, Email) VALUES (\"$DNI\",\"$Nombre\",\"$Apellidos\",\"$Telefono\",\"$Email\");";
 echo $query;
 
 $res = mysqli_query($bbdd, $query);
 if($res){
-}else{
-    echo mysqli_error($bbdd);
+    header("Location:correcto.php");
+}
+else{
+
+$error = mysqli_error($bbdd);
+    header("Location:incorrecto.php?error=$error");
 }
 ?>
 </html>
