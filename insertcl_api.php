@@ -1,7 +1,8 @@
 <DOCTYPE html>
 <html lang="es">
-<body>
 
+<body>
+<?php require 'includes/head.php'?>
 <?php
 
 echo "<p>" . $_POST['DNI'] . "</p>";
@@ -16,7 +17,7 @@ $Apellidos = $_POST['Apellidos'];
 $Telefono = $_POST['Telefono'];
 $Email = $_POST['Email'];
 
-$query="INSERT INTO Client (DNI, Nombre, Apellidos, Telefono, Email) VALUES (\"$DNI\",\"$Nombre\",\"$Apellidos\",\"$Telefono\",\"$Email\");";
+$query="INSERT INTO Client(Dni,Nombre,Apellidos,Telefono,Email) VALUES (\"$DNI\", \"$Nombre\", \"$Apellidos\", \"$Telefono\", \"$Email\");";
 echo $query;
 
 $res = mysqli_query($bbdd, $query);
@@ -28,5 +29,7 @@ else{
 $error = mysqli_error($bbdd);
     header("Location:incorrecto.php?error=$error");
 }
+
 ?>
+</body>
 </html>

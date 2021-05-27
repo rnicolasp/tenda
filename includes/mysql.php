@@ -1,6 +1,6 @@
 <?php
 $host= "localhost";
-$database= "Horno";
+$database= "Forn";
 $user= "root";
 $password= "";
 $bbdd= mysqli_connect ($host,$user,$password,$database);
