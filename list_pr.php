@@ -1,5 +1,6 @@
 <DOCTYPE html>
 <html lang="es">
+<header>
 <?php require 'includes/head.php';?>
 
     <div style="width: 100%; text-align: center;">
@@ -59,7 +60,7 @@ $query = "SELECT Codi_proveidor, Nombre_proveidor FROM Proveidor ORDER BY Nombre
                         <td>$row[Precio]</td>
                         <td>$row[Nombre]</td>  
                         <td>$row[Nombre_proveidor]</td>
-                        <td><a href=\"deletepr_api.php?Codi=$row[Codi]\">Eliminar</a></td>
+                        <td><a href=\"deletepr_api.php?Codi=$row[Codi]\"><img src='Images/basura.png' width='20px'></a></td>                        
                         </tr>";
             }
                     
@@ -70,6 +71,6 @@ $query = "SELECT Codi_proveidor, Nombre_proveidor FROM Proveidor ORDER BY Nombre
         <div style="width: 100%; text-align: center;">
 <img src="Images/pepeLove.gif" width="150px" />
     </div>
-
+</header>
 </body>
 

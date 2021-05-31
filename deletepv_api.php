@@ -12,5 +12,5 @@ if($res){
 else{
 
 $error = mysqli_error($bbdd);
-    header("Location:incorrecto.php?error=$error");
+    header("Location:incorrectopv.php?error=$error");
 }
