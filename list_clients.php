@@ -11,9 +11,12 @@
 <?php require 'includes/home.php';?>
 
 <?php require 'includes/header_list.php';?>
+<form action="list_clients.php" method="get">
+
 <div>
+
 <label>Cerca per DNI</label>
-<input list="brow">
+<input list="brow" name="Filtro2">
 <datalist id="brow">
   <?php
     $query = "SELECT DNI FROM Client AS cl ORDER BY DNI;";
@@ -29,10 +32,10 @@
     $where="";
     if (isset($_GET["Filtro2"]) && $_GET["Filtro2"] > 0){
         $where = " WHERE DNI=\"$_GET[Filtro2]\" " or die (mysqli_error($bbdd));
-        echo "asldkmasd";
     }
     ?>
 <button type="submit">Filtrar</button>
+</form>
     <table>
     <thead>
         <tr>

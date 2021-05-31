@@ -17,13 +17,13 @@
     <form action="insertpv_api.php" method="post">
     <div>
         <label> Nombre </label>
-        <input type="text" max="255"name="Nombre" placeholder="Nombre del Proveidor" required/>
+        <input type="text" max="25"name="Nombre" placeholder="Nombre del Proveidor" required/>
     </div><div>
         <label> Telefono </label>
-        <input type="text" maxlenght="255" name="Telefono" placeholder="Telefono del Proveidor"required/>
+        <input type="text" maxlenght="14" name="Telefono" placeholder="Telefono del Proveidor"required/>
         </div><div>
         <label> Email </label>
-        <input type="text" maxlenght="255" name="Email" placeholder="Email del Proveidor" required/>
+        <input type="text" maxlenght="60" name="Email" placeholder="Email del Proveidor" required/>
         </div>
 
         <button type="submit"> Enviar</button>
