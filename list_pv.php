@@ -53,7 +53,7 @@ $query = "SELECT Codi_proveidor, Nombre_proveidor FROM Proveidor ORDER BY Nombre
                         <td>$row[Nombre_proveidor]</td>
                         <td>$row[Telefono_proveidor]</td>
                         <td>$row[Email_proveidor]</td>    
-                        <td><a href=\"deletepv_api.php?Codi_proveidor=$row[Codi_proveidor]\">Eliminar</a></td>                  
+                        <td><a href=\"deletepv_api.php?Codi_proveidor=$row[Codi_proveidor]\"><img src='Images/basura.png' width='20px'></a></td>                  
                         </tr>";
             }
 

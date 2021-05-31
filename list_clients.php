@@ -56,7 +56,7 @@
                         <td> $row[Apellidos]</td>  
                         <td> $row[Telefono]</td>
                         <td> $row[Email]</td>                      
-                        <td><a href=\"deletecl_api.php?DNI=$row[Dni]\">Eliminar</a></td>
+                        <td><a href=\"deletecl_api.php?DNI=$row[Dni]\"><img src='Images/basura.png' width='20px'></a></td>
                         </tr>";
             }
                     ?>
