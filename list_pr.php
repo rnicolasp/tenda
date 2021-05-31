@@ -27,7 +27,6 @@ $query = "SELECT Codi_proveidor, Nombre_proveidor FROM Proveidor ORDER BY Nombre
             $where="";
             if (isset($_GET["Filtro1"]) && $_GET["Filtro1"] > 0){
                 $where = " WHERE pv.Codi_proveidor=\"$_GET[Filtro1]\" ";
-                echo "aslighasuoghasiphngaipgiojsgpajsgijapig";
             }
             ?>
 </select> 
@@ -42,6 +41,7 @@ $query = "SELECT Codi_proveidor, Nombre_proveidor FROM Proveidor ORDER BY Nombre
             <th> Precio </th>
             <th> Nombre </th>
             <th> Proveidor </th>
+            <th> Opciones </th>
         </tr>
     </thead>
     <tbody>
@@ -59,6 +59,7 @@ $query = "SELECT Codi_proveidor, Nombre_proveidor FROM Proveidor ORDER BY Nombre
                         <td>$row[Precio]</td>
                         <td>$row[Nombre]</td>  
                         <td>$row[Nombre_proveidor]</td>
+                        <td><a href=\"deletepr_api.php?Codi=$row[Codi]\">Eliminar</a></td>
                         </tr>";
             }
                     

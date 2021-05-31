@@ -41,24 +41,24 @@
             <th> Apellidos </th>
             <th> Telefono </th>
             <th> Email </th>
+            <th> Opciones </th> 
         </tr>
     </thead>
     <tbody>
         <?php
         
             $query="SELECT * FROM Client $where ORDER BY Nombre";
-            $result = mysqli_query($bbdd,$query);
+            $result = mysqli_query($bbdd,$query) or die(mysqli_error($bbdd));
             while ($row=mysqli_fetch_assoc($result)) {
                 echo "<tr>
-                        <td>$row[Dni]</td>
-             
-                        <td>$row[Nombre]</td>
-                        <td>$row[Apellidos]</td>  
-                        <td>$row[Telefono]</td>
-                        <td>$row[Email]</td>                      
+                        <td> $row[Dni]</td>
+                        <td> $row[Nombre]</td>
+                        <td> $row[Apellidos]</td>  
+                        <td> $row[Telefono]</td>
+                        <td> $row[Email]</td>                      
+                        <td><a href=\"deletecl_api.php?DNI=$row[Dni]\">ELIMINAR</a></td>
                         </tr>";
             }
-                    
                     ?>
     </tbody>
 </table> 
