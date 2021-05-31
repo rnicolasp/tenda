@@ -29,6 +29,7 @@ else{
 $error = mysqli_error($bbdd);
     header("Location:incorrecto.php?error=$error");
 }
+
 ?>
 </body>
 </html>
