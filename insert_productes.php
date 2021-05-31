@@ -18,10 +18,10 @@
     <form action="insertpr_api.php" method="post">
        <div>
         <label> Precio </label>
-        <input type="number" max="9999" step="0.001" name="Precio" placeholder="Inserta el precio" required />
+        <input type="number" max="999" step="0.001" name="Precio" placeholder="Inserta el precio" required />
        </div><div>
         <label> Nombre </label>
-        <input type="text" maxlength="35" name="Nombre" placeholder="Inserta el nombre" required/>
+        <input type="text" maxlength="25" name="Nombre" placeholder="Inserta el nombre" required/>
         </div><div>
         <label> Proveidor </label>
         <select name="proveidor">
