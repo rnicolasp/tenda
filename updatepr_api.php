@@ -6,7 +6,7 @@ $query="UPDATE Productes SET WHERE Codi=\"$_GET[Codi_proveidor]\"";
 
 $res = mysqli_query($bbdd, $query);
 if($res){
-    header("Location:correct_ok.php");
+    header("Location:correcto.php");
 }
 else{
 
