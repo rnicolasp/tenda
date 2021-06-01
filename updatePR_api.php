@@ -1,8 +1,7 @@
 <?php
 require "includes/mysql.php";
 
-$query="UPDATE TABLE Productes WHERE Codi=\"$_GET[Codi_proveidor]\"";
-$result=mysqli_query($bbdd,$query); 
+$query="UPDATE Productes SET WHERE Codi=\"$_GET[Codi_proveidor]\"";
 
 
 $res = mysqli_query($bbdd, $query);
