@@ -59,7 +59,7 @@
                         <td> $row[Telefono]</td>
                         <td> $row[Email]</td>                      
                         <td><a href=\"deletecl_api.php?DNI=$row[Dni]\"><img src='Images/basura.png' width='20px'></a></td>
-                        <td><a href=\"deletepv_api.php?Codi_proveidor=$row[Codi_proveidor]\"><img src='Images/edit_icono.png' width='20px'></a></td>                  
+                        <td><a href=\"insert_cl.php?DNI=$row[Dni]\"><img src='Images/edit_icono.png' width='20px'></a></td>                  
                         </tr>";
             }
                     ?>
