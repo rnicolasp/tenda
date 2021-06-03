@@ -16,7 +16,7 @@
             </div>      
 </div>
 <div style="width: 100%; text-align: center;">
-    <form action=updatecl_api.php" method="post">
+    <form action= updatecl_api.php method="post">
         <div>
         <label> <b>DNI</b> </label>
         <input type="text" max="15"name="DNI" placeholder="DNI del cliente" required/>

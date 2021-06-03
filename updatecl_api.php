@@ -2,15 +2,16 @@
 
 include "includes/mysql.php";
 
-$Dni=$_GET['Dni'];
+$id=$_GET['Dni'];
 
-if(isset($DNI))
+if(isset($id))
  $Nombre = $_POST['Nombre'];
  $Apellido = $_POST['Apellidos'];
  $Telefono = $_POST['Telefono'];
  $Email = $_POST['Email'];
 
- $edit= mysqli_query($bbdd,"update Client set Nombre='$Nombre', Apellido=$'$Apellido', Telefono='$Email/'");
+ $edit= "update Client set WHERE Nombre='$Nombre', Apellido='$Apellido', Telefono='$Email'";
+ echo($Dni);
 
 
  if($edit)
