@@ -17,9 +17,8 @@
             <div style="width: 100%; text-align: topright;">
         </div>
 
-<?php
-        $error = mysqli_error($bbdd);
-        ?>
+        <?php echo $_GET["error"]?>
+
     </body>
 
     </html>
