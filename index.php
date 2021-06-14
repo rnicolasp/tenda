@@ -8,16 +8,15 @@
             <?php require 'includes/header.php'; ?>
             <h2>Bienvenid@ a la panadería</h2>
         </div>
-        <div style="width: 100%; text-align: center;"></div>
+        <div style="width: 100%; text-align: center; margin: 10px auto 50px auto;">
         <p><i>Esta es una pequeña guía de como funciona la pagina web, una vez dicho esto, comencemos.</i></p>
         </div>
-        <div style="width: 100%; text-align: center;">
+        <div style="width: 100%; text-align: center; margin: 10px auto 50px auto;">
             <img src="Images/pepoDJ.gif" width="200px" />
-        </div><div>
-    </div>
-        <div style="text-align: center;">
+        </div>
+        <div style="text-align: center; margin: 15px auto 50px auto;">
             <p> Cuando clicas en el boton llamado "<b><u>Listas</u></b>" se abrirá el apartado de las listas disponibles en la pagina web.
-            </p><p>
+            </p></div><p><div style="text-align: center; margin: 15px auto 50px auto;">
                 Cuando clicas en el boton llamado "<b><u>Insertar</u></b>" se abrirá el apartado de las opciones posibles para insertar en la base de datos
             </p>
         </div>

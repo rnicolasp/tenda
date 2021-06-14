@@ -14,7 +14,8 @@
                 <img src="Images/PepeClown.gif" width="150px" />
             </div> 
             <?php require 'includes/header_insert.php'; ?>
-            <p> Elige en que tabla quieres insertar datos. </p>
+            <div style="margin: 70px auto 50px auto">
+            <p> Elija la tabla a la que quiere insertar datos. </p>
         </div>
             </div>
         </div>

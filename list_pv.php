@@ -12,9 +12,9 @@
 <?php require 'includes/header_list.php';?>
 <div>
 <form action="list_pv.php" method="GET">
-<label>Filtrar per:</label>
+<label>Filtrar por:</label>
 <select name="Filtro1">
-<option value=0>Tots els proveidors</option>
+<option value=0>Todos los proveidores</option>
 <?php
 $query = "SELECT Codi_proveidor, Nombre_proveidor FROM Proveidor ORDER BY Nombre_proveidor";
             $result = mysqli_query($bbdd, $query);
@@ -44,7 +44,7 @@ $query = "SELECT Codi_proveidor, Nombre_proveidor FROM Proveidor ORDER BY Nombre
     </thead>
     <tbody>
         <?php
-            $query="SELECT * FROM Proveidor $where ORDER BY Codi_proveidor ";
+            $query="SELECT * FROM Proveidor AS pv $where ORDER BY Codi_proveidor ";
             $result = mysqli_query($bbdd,$query) or die (mysqli_error($bbdd));
             while ($row=mysqli_fetch_assoc($result)) {
                 echo "<tr>
@@ -53,7 +53,7 @@ $query = "SELECT Codi_proveidor, Nombre_proveidor FROM Proveidor ORDER BY Nombre
                         <td>$row[Telefono_proveidor]</td>
                         <td>$row[Email_proveidor]</td>    
                         <td><a href=\"deletepv_api.php?Codi_proveidor=$row[Codi_proveidor]\"><img src='Images/basura.png' width='20px'></a></td>                  
-                        <td><a href=\"deletepv_api.php?Codi_proveidor=$row[Codi_proveidor]\"><img src='Images/edit_icono.png' width='20px'></a></td>                  
+                        <td><a href=\"insert_pv.php?Nombre_proveidor=$row[Nombre_proveidor]\"><img src='Images/edit_icono.png' width='20px'></a></td>                  
                         </tr>";
             }
 

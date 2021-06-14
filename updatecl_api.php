@@ -23,4 +23,4 @@ $edit = mysqli_query($bbdd, $query);
     $error = mysqli_error($bbdd);
   header('location:incorrect_del.php');
  }
- 
+ ?>

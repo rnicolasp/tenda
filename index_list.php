@@ -14,7 +14,7 @@
                 <img src="Images/pepoJAM.gif" width="150px" />
             </div> 
             <?php require 'includes/header_list.php'; ?>
-            <p> Elige la lista que quieres ver. </p>
+            <p> Elija la lista que quiere ver. </p>
         </div>
             </div>
         </div>

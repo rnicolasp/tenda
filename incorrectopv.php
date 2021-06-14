@@ -8,12 +8,14 @@
                 Panaderia de PeepoDJ
             </h1>
             <?php require 'includes/header.php'; ?>
-            <h2> ¡No se ha podido enviar!
+            <h2>¡Ha habido un error inesperado!
             </h2>
         </div>
-        <div style="width: 100%; text-align: center;">
-        <p> !!!Antes de intentar borrar un proveidor asegurate de que no tenga productos asignados porque sino saltara un error!!!.</p>
-        <p> No ha sido posible enviar los datos a la base de datos debido a un error inesperado envíe una captura de pantalla a un administrador. </p>
+        <div style="width: 100%; text-align: center; margin: 80px auto 50px auto">
+        <p><b> ¡Recuerde que para poder eliminar un proveidor, debe eliminar todos sus productos!</b></p>
+        <div style="margin: 100px auto 50px auto"></div>
+        <p> En caso de que haya hecho el paso anterior i el error continue, porfavor contacte con un administrador.</p>
+
             <img src="Images/ohno.gif" width="200px" />
             <div style="width: 100%; text-align: topright;">
         </div>
